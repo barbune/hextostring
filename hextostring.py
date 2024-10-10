@@ -6,11 +6,7 @@ def hextostring(w_file,r_file):
     str = ""
     b_str = ""
     with open(r_file,'r+',4096) as f:
-        buf = io.BufferedReader(f)
-        while True:
-            print(buf.read())
         for i in f.read():
-            print(f'间隔一下：{i}')
             hex += i
     trim_str=hex.split(" ")
     print(trim_str)
